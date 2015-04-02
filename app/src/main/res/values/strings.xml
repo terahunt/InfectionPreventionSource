@@ -8,4 +8,7 @@
     <string name="chat_navigation_image_button_text">Chat</string>
     <string name="favorites_navigation_image_button_text">Favorites</string>
     <string name="resources_navigation_image_button_text">Resources</string>
+    <string name="title_activity_movie_player">MoviePlayerActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
