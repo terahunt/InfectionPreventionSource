@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
@@ -8,7 +9,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/training_navigation_text_view"
+                android:text="@string/training_navigation_text"
                 android:textSize="@dimen/navigation_title_size"
                 android:layout_marginTop="@dimen/navigation_title_margin"
                 android:layout_marginBottom="@dimen/navigation_title_margin"/>

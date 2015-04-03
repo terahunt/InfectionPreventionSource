@@ -36,7 +36,7 @@
                  android:layout_height="wrap_content"
                  android:layout_centerInParent="true"
                  android:layout_below="@id/video_image_button"
-                 android:text="@string/video_navigation_image_button_text"/>
+                 android:text="@string/video_navigation_text"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_below="@id/training_image_button"
-                android:text="@string/training_navigation_image_button_text"/>
+                android:text="@string/training_navigation_text"/>
     </RelativeLayout>
     </LinearLayout>
 
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_below="@id/outbreak_image_button"
-                android:text="@string/outbreak_navigation_image_button_text"/>
+                android:text="@string/outbreak_navigation_text"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_below="@id/chat_image_button"
-                android:text="@string/chat_navigation_image_button_text"/>
+                android:text="@string/chat_navigation_text"/>
         </RelativeLayout>
     </LinearLayout>
 
@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_below="@id/resources_image_button"
-                android:text="@string/resources_navigation_image_button_text"/>
+                android:text="@string/resources_navigation_text"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -143,7 +143,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_below="@id/favorites_image_button"
-                android:text="@string/favorites_navigation_image_button_text"/>
+                android:text="@string/favorites_navigation_text"/>
         </RelativeLayout>
     </LinearLayout>
 
