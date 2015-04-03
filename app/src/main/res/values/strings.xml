@@ -10,5 +10,8 @@
     <string name="resources_navigation_image_button_text">Resources</string>
     <string name="title_activity_movie_player">MoviePlayerActivity</string>
 
+    <string name="training_navigation_text_view">Training</string>
+    <string name="title_activity_training_navigation">TrainingNavigationActivity</string>
+
     <string name="hello_world">Hello world!</string>
 </resources>
