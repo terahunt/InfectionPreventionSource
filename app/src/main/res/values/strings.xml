@@ -15,5 +15,8 @@
 
     <string name="title_activity_training">TrainingActivity</string>
     <string name="title_activity_resources">ResourcesActivity</string>
+    <string name="title_activity_outbreak">OutbreakActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
