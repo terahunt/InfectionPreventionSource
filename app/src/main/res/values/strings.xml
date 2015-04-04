@@ -13,6 +13,7 @@
     <string name="title_activity_video_navigation">TrainingNavigationActivity</string>
     <string name="title_activity_video">VideoActivity</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_training">TrainingActivity</string>
+    <string name="title_activity_resources">ResourcesActivity</string>
 
 </resources>
