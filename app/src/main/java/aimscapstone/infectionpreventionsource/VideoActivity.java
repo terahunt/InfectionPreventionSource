@@ -13,6 +13,7 @@ public class VideoActivity extends ActionBarActivity {
 
     private VideoView mVideoView;
     private MediaController mc;
+    private static final String POSITION = "index";
 
 
     @Override
@@ -21,13 +22,10 @@ public class VideoActivity extends ActionBarActivity {
         setContentView(R.layout.activity_video);
 
         mVideoView = (VideoView)findViewById(R.id.videoView);
-        //mVideoView = (VideoView)findViewById(R.id.landVideoView);
 
         //Keep screen on while video plays
         mVideoView.setKeepScreenOn(true);
 
-        //Get path to video
-        String vPath = "http://www.androidbegin.com/tutorial/AndroidCommercial.3gp";
         Uri uri = Uri.parse("android.resource://" +this.getPackageName()
         + "/" +R.raw.ed_sheeran);
 
@@ -39,10 +37,26 @@ public class VideoActivity extends ActionBarActivity {
 
         //Start
         mVideoView.setVideoURI(uri);
+        if(savedInstanceState != null)
+        {
+            int mPosition = savedInstanceState.getInt(POSITION, 0);
+            mVideoView.seekTo(mPosition);
+        }
         mVideoView.start();
 
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mVideoView.stopPlayback();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(POSITION, mVideoView.getCurrentPosition());
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
