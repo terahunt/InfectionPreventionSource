@@ -29,18 +29,15 @@
         </activity>
         <activity
             android:name=".VideoActivity"
-            android:label="@string/title_activity_video">
-
+            android:label="@string/title_activity_video" >
         </activity>
         <activity
             android:name=".ResourcesActivity"
             android:label="@string/title_activity_resources" >
-
         </activity>
         <activity
-            android:name=".OutbreakActivity"
-            android:label="@string/title_activity_outbreak" >
-
+            android:name=".FaqActivity"
+            android:label="@string/title_activity_faq" >
         </activity>
     </application>
 

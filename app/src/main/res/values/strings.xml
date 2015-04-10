@@ -18,5 +18,6 @@
     <string name="title_activity_outbreak">OutbreakActivity</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_faq">FaqActivity</string>
 
 </resources>

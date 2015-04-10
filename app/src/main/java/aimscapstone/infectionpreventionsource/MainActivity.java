@@ -13,9 +13,8 @@ public class MainActivity extends ActionBarActivity {
     private ImageButton mVideoButton;
     private ImageButton mTrainingButton;
     private ImageButton mResourcesButton;
-    private ImageButton mOutbreakButton;
-    private ImageButton mFavoritesButton;
-    private ImageButton mChatButton;
+    private ImageButton mFaqButton;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +47,9 @@ public class MainActivity extends ActionBarActivity {
         });
 
         //Start outbreak activity
-        mOutbreakButton = (ImageButton)findViewById(R.id.outbreak_image_button);
+        /*mFaqButton = (ImageButton)findViewById(R.id.outbreak_image_button);
 
-        mOutbreakButton.setOnClickListener(new View.OnClickListener()
+        mFaqButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick (View v)
@@ -59,6 +58,7 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(openOutbreakActivity);
             }
         });
+        */
 
         //Start resources activity
         mResourcesButton = (ImageButton)findViewById(R.id.resources_image_button);

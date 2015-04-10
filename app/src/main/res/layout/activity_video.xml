@@ -25,5 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below = "@+id/videoView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu sodales tellus.Curabitur rutrum consequat tristique. Maecenas turpis risus,tristique at neque eu, sodales semper ante"/>
 </RelativeLayout>

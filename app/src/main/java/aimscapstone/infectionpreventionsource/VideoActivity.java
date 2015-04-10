@@ -15,7 +15,6 @@ public class VideoActivity extends ActionBarActivity {
     private MediaController mc;
     private static final String POSITION = "index";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
