@@ -1,12 +1,9 @@
 <resources>
     <string name="app_name">Infection Prevention Source</string>
     <string name="action_settings">Settings</string>
-    <string name="what_to_do_question">What would you like to do?</string>
     <string name="video_navigation_text">Videos</string>
     <string name="training_navigation_text">Training</string>
     <string name="outbreak_navigation_text">Outbreak</string>
-    <string name="chat_navigation_text">Chat</string>
-    <string name="favorites_navigation_text">Favorites</string>
     <string name="resources_navigation_text">Resources</string>
 
     <string name="title_activity_training_navigation">TrainingNavigationActivity</string>
@@ -19,5 +16,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_faq">FaqActivity</string>
+    <string name="home_navigation_text">Home</string>
 
 </resources>

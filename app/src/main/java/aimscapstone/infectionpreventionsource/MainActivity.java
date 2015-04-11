@@ -91,10 +91,39 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.resource_nav) {
+            Intent openResourcesActivity = new Intent(MainActivity.this, ResourcesActivity.class);
+            startActivity(openResourcesActivity);
             return true;
         }
 
-        return super.onOptionsItemSelected(item);
+        else if(id == R.id.video_nav)
+        {
+            Intent openVideoActivity = new Intent(MainActivity.this, VideoNavigationActivity.class);
+            startActivity(openVideoActivity);
+            return true;
+        }
+        /*
+        else if(id == R.id.faq_nav)
+        {
+            Intent openResourcesActivity = new Intent(MainActivity.this, FaqActivity.class);
+            startActivity(openResourcesActivity);
+            return true;
+        }
+        */
+
+        else if(id == R.id.training_nav)
+        {
+            Intent openTrainingActivity = new Intent(MainActivity.this, TrainingNavigationActivity.class);
+            startActivity(openTrainingActivity);
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+
+
     }
 }

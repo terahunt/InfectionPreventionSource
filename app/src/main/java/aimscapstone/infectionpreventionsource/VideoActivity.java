@@ -1,5 +1,6 @@
 package aimscapstone.infectionpreventionsource;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -52,15 +53,9 @@ public class VideoActivity extends ActionBarActivity {
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt(POSITION, mVideoView.getCurrentPosition());
-    }
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_video, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -72,10 +67,39 @@ public class VideoActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.resource_nav) {
+            Intent openResourcesActivity = new Intent(VideoActivity.this, ResourcesActivity.class);
+            startActivity(openResourcesActivity);
+            return true;
+        }
+        else if(id == R.id.home_nav)
+        {
+            Intent openMainActivity = new Intent(VideoActivity.this, MainActivity.class);
+            startActivity(openMainActivity);
             return true;
         }
 
-        return super.onOptionsItemSelected(item);
+        /*
+        else if(id == R.id.resource_nav)
+        {
+            Intent openResourcesActivity = new Intent(VideoActivity.this, ResourcesActivity.class);
+            startActivity(openResourcesActivity);
+            return true;
+        }
+        */
+
+        else if(id == R.id.training_nav)
+        {
+            Intent openTrainingActivity = new Intent(VideoActivity.this, TrainingNavigationActivity.class);
+            startActivity(openTrainingActivity);
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+
+
     }
 }

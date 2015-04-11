@@ -2,8 +2,20 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".MainActivity">
-    <item android:id="@+id/action_settings"
-          android:title="@string/action_settings"
+    <item android:id="@+id/home_nav"
+          android:title="@string/home_navigation_text"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+    <item android:id="@+id/resource_nav"
+          android:title="@string/resources_navigation_text"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+    <item android:id="@+id/video_nav"
+          android:title="@string/video_navigation_text"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+    <item android:id="@+id/training_nav"
+          android:title="@string/training_navigation_text"
           android:orderInCategory="100"
           app:showAsAction="never"/>
 </menu>

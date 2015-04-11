@@ -1,5 +1,6 @@
 package aimscapstone.infectionpreventionsource;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -18,7 +19,7 @@ public class FaqActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_faq, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -30,10 +31,46 @@ public class FaqActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.resource_nav) {
+            Intent openResourcesActivity = new Intent(FaqActivity.this, ResourcesActivity.class);
+            startActivity(openResourcesActivity);
             return true;
         }
 
-        return super.onOptionsItemSelected(item);
+        else if(id == R.id.video_nav)
+        {
+            Intent openVideoActivity = new Intent(FaqActivity.this, VideoNavigationActivity.class);
+            startActivity(openVideoActivity);
+            return true;
+        }
+
+        else if(id == R.id.home_nav)
+        {
+            Intent openMainActivity = new Intent(FaqActivity.this, MainActivity.class);
+            startActivity(openMainActivity);
+            return true;
+        }
+        /*
+        else if(id == R.id.faq_nav)
+        {
+            Intent openResourcesActivity = new Intent(VideoNavigationActivity.this, FaqActivity.class);
+            startActivity(openResourcesActivity);
+            return true;
+        }
+        */
+
+        else if(id == R.id.training_nav)
+        {
+            Intent openTrainingActivity = new Intent(FaqActivity.this, TrainingNavigationActivity.class);
+            startActivity(openTrainingActivity);
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+
+
     }
 }
