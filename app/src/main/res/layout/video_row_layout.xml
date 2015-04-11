@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@mipmap/edscreencap"
-        android:clickable="false"/>
+        android:padding="20dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +19,8 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/videoRowTextView"
         android:text="Ed Sheeran - You Need Me"
-        android:textColor="#ffffffff"/>
+        android:textColor="#ffffffff"
+        android:padding="20dp"/>
 
 
 </RelativeLayout>

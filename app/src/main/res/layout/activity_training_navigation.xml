@@ -6,13 +6,6 @@
                 tools:context="aimscapstone.infectionpreventionsource.TrainingNavigationActivity"
                 android:orientation="vertical"
                 android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/training_navigation_text"
-                android:textSize="@dimen/navigation_title_size"
-                android:layout_marginTop="@dimen/navigation_title_margin"
-                android:layout_marginBottom="@dimen/navigation_title_margin"/>
 
             <ListView
                 android:layout_width="match_parent"

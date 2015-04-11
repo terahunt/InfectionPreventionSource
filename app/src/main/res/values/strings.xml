@@ -7,15 +7,14 @@
     <string name="resources_navigation_text">Resources</string>
     <string name="faq_navigation_text">FAQ</string>
 
-    <string name="title_activity_training_navigation">TrainingNavigationActivity</string>
-    <string name="title_activity_video_navigation">TrainingNavigationActivity</string>
-    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_training_navigation">Training</string>
+    <string name="title_activity_video_navigation">Videos</string>
+    <string name="title_activity_video">Videos</string>
 
-    <string name="title_activity_training">TrainingActivity</string>
-    <string name="title_activity_resources">ResourcesActivity</string>
-    <string name="title_activity_outbreak">OutbreakActivity</string>
+    <string name="title_activity_training">Training</string>
+    <string name="title_activity_resources">Resources</string>
 
-    <string name="title_activity_faq">FaqActivity</string>
+    <string name="title_activity_faq">FAQ</string>
     <string name="home_navigation_text">Home</string>
 
 </resources>

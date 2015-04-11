@@ -6,12 +6,5 @@
               tools:context="aimscapstone.infectionpreventionsource.FaqActivity"
               android:orientation="vertical"
               android:gravity="center|top">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/faq_navigation_text"
-        android:textSize="@dimen/navigation_title_size"
-        android:layout_marginTop="@dimen/navigation_title_margin"
-        android:layout_marginBottom="@dimen/navigation_title_margin"/>
 
 </LinearLayout>
