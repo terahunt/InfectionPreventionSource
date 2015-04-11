@@ -5,6 +5,7 @@
     <string name="training_navigation_text">Training</string>
     <string name="outbreak_navigation_text">Outbreak</string>
     <string name="resources_navigation_text">Resources</string>
+    <string name="faq_navigation_text">FAQ</string>
 
     <string name="title_activity_training_navigation">TrainingNavigationActivity</string>
     <string name="title_activity_video_navigation">TrainingNavigationActivity</string>
@@ -14,7 +15,6 @@
     <string name="title_activity_resources">ResourcesActivity</string>
     <string name="title_activity_outbreak">OutbreakActivity</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_faq">FaqActivity</string>
     <string name="home_navigation_text">Home</string>
 

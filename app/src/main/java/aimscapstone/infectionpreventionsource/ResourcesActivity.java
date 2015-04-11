@@ -46,14 +46,13 @@ public class ResourcesActivity extends ActionBarActivity {
             startActivity(openVideoActivity);
             return true;
         }
-        /*
-        else if(id == R.id.resource_nav)
+        else if(id == R.id.faq_nav)
         {
-            Intent openResourcesActivity = new Intent(MainActivity.this, ResourcesActivity.class);
-            startActivity(openResourcesActivity);
+            Intent openFaqActivity = new Intent(ResourcesActivity.this, FaqActivity.class);
+            startActivity(openFaqActivity);
             return true;
         }
-        */
+
         else if(id == R.id.home_nav)
         {
             Intent openMainActivity = new Intent(ResourcesActivity.this, MainActivity.class);

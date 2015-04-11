@@ -50,14 +50,6 @@ public class FaqActivity extends ActionBarActivity {
             startActivity(openMainActivity);
             return true;
         }
-        /*
-        else if(id == R.id.faq_nav)
-        {
-            Intent openResourcesActivity = new Intent(VideoNavigationActivity.this, FaqActivity.class);
-            startActivity(openResourcesActivity);
-            return true;
-        }
-        */
 
         else if(id == R.id.training_nav)
         {

@@ -79,14 +79,12 @@ public class VideoActivity extends ActionBarActivity {
             return true;
         }
 
-        /*
-        else if(id == R.id.resource_nav)
+        else if(id == R.id.faq_nav)
         {
-            Intent openResourcesActivity = new Intent(VideoActivity.this, ResourcesActivity.class);
-            startActivity(openResourcesActivity);
+            Intent openFaqActivity = new Intent(VideoActivity.this, FaqActivity.class);
+            startActivity(openFaqActivity);
             return true;
         }
-        */
 
         else if(id == R.id.training_nav)
         {

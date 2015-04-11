@@ -58,14 +58,13 @@ public class TrainingNavigationActivity extends ActionBarActivity {
             startActivity(openMainActivity);
             return true;
         }
-        /*
+
         else if(id == R.id.faq_nav)
         {
-            Intent openResourcesActivity = new Intent(TrainingActivity.this, ResourcesActivity.class);
-            startActivity(openResourcesActivity);
+            Intent openFaqActivity = new Intent(TrainingNavigationActivity.this, FaqActivity.class);
+            startActivity(openFaqActivity);
             return true;
         }
-        */
 
         else
         {

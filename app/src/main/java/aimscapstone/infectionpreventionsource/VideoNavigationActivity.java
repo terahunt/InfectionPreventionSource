@@ -21,7 +21,7 @@ public class VideoNavigationActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_navigation);
 
-        String[] videoTopics = {"Video 1", "Video 2", "Video 3", "Video 4", "Video 5", "Video 6"};
+        String[] videoTopics = {"Video 1", "Video 2", "Video 3"};
 
         adapter = new ArrayAdapter<String>(this, R.layout.video_row_layout,
                 R.id.videoRowTextView, videoTopics);
@@ -33,10 +33,10 @@ public class VideoNavigationActivity extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = (String) adapter.getItem(position);
-                if(item.equals("Video 1")) {
+                //if(item.equals("Video 1")) {
                     Intent startVideo = new Intent(VideoNavigationActivity.this, VideoActivity.class);
                     startActivity(startVideo);
-                }
+            //    }
 
 
             }
@@ -63,15 +63,13 @@ public class VideoNavigationActivity extends ActionBarActivity {
             startActivity(openResourcesActivity);
             return true;
         }
-        /*
+
         else if(id == R.id.faq_nav)
         {
-            Intent openResourcesActivity = new Intent(VideoNavigationActivity.this, FaqActivity.class);
-            startActivity(openResourcesActivity);
+            Intent openFaqActivity = new Intent(VideoNavigationActivity.this, FaqActivity.class);
+            startActivity(openFaqActivity);
             return true;
         }
-        */
-
 
         else if(id == R.id.training_nav)
         {

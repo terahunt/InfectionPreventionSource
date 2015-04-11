@@ -46,19 +46,19 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        //Start outbreak activity
-        /*mFaqButton = (ImageButton)findViewById(R.id.outbreak_image_button);
+        //Start FAQ activity
+        mFaqButton = (ImageButton)findViewById(R.id.faq_image_button);
 
         mFaqButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick (View v)
             {
-                Intent openOutbreakActivity = new Intent(MainActivity.this, OutbreakActivity.class);
-                startActivity(openOutbreakActivity);
+                Intent openFaqActivity = new Intent(MainActivity.this, FaqActivity.class);
+                startActivity(openFaqActivity);
             }
         });
-        */
+
 
         //Start resources activity
         mResourcesButton = (ImageButton)findViewById(R.id.resources_image_button);
@@ -103,14 +103,13 @@ public class MainActivity extends ActionBarActivity {
             startActivity(openVideoActivity);
             return true;
         }
-        /*
+
         else if(id == R.id.faq_nav)
         {
-            Intent openResourcesActivity = new Intent(MainActivity.this, FaqActivity.class);
-            startActivity(openResourcesActivity);
+            Intent openFaqActivity = new Intent(MainActivity.this, FaqActivity.class);
+            startActivity(openFaqActivity);
             return true;
         }
-        */
 
         else if(id == R.id.training_nav)
         {
