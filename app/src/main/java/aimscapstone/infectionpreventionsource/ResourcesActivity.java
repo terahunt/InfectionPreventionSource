@@ -21,16 +21,6 @@ public class ResourcesActivity extends ActionBarActivity {
         ListView lv = (ListView) findViewById(R.id.resourcesListView);
         lv.setAdapter(adapter);
 
-        //Hide description TextView onClick()
-       /* ImageButton arrow = (ImageButton) findViewById(R.id.resourcesImageButton);
-        arrow.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                 findViewById(R.id.resourcesRowTextViewDesc).setVisibility(View.GONE);
-            }
-        });*/
     }
 
 }

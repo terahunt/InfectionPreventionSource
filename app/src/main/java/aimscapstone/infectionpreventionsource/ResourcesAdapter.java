@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class ResourcesAdapter extends BaseAdapter {
@@ -41,12 +42,29 @@ public class ResourcesAdapter extends BaseAdapter {
 
         convertView = inflater.inflate(R.layout.resources_row_layout, null);
 
-        TextView title = (TextView) convertView.findViewById(R.id.resourcesRowTextViewTitle);
-        TextView desc = (TextView) convertView.findViewById(R.id.resourcesRowTextViewDesc);
+        final TextView title = (TextView) convertView.findViewById(R.id.resourcesRowTextViewTitle);
+        final TextView desc = (TextView) convertView.findViewById(R.id.resourcesRowTextViewDesc);
 
+        final ImageButton imageButton = (ImageButton) convertView.findViewById(R.id.resourcesImageButton);
 
+        imageButton.setImageResource(R.mipmap.arrow);
         title.setText(resourcesTitle[position]);
         desc.setText(resourcesDesc[position]);
+        desc.setVisibility(View.INVISIBLE);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(desc.getVisibility()==View.INVISIBLE) {
+                    desc.setVisibility(View.VISIBLE);
+                    imageButton.setRotation(90);
+                }
+                else {
+                    desc.setVisibility(View.INVISIBLE);
+                    imageButton.setRotation(0);
+                }
+            }
+        });
 
 
         return convertView;
