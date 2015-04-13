@@ -50,17 +50,17 @@ public class ResourcesAdapter extends BaseAdapter {
         imageView.setImageResource(R.mipmap.arrow);
         title.setText(resourcesTitle[position]);
         desc.setText(resourcesDesc[position]);
-        desc.setVisibility(View.INVISIBLE);
+        desc.setVisibility(View.GONE);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(desc.getVisibility()==View.INVISIBLE) {
+                if(desc.getVisibility()==View.GONE) {
                     desc.setVisibility(View.VISIBLE);
                     imageView.setRotation(90);
                 }
                 else {
-                    desc.setVisibility(View.INVISIBLE);
+                    desc.setVisibility(View.GONE);
                     imageView.setRotation(0);
                 }
             }
