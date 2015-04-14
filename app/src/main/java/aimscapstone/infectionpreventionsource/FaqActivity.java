@@ -39,7 +39,7 @@ public class FaqActivity extends ActionBarActivity {
 
         else if(id == R.id.video_nav)
         {
-            Intent openVideoActivity = new Intent(FaqActivity.this, VideoNavigationActivity.class);
+            Intent openVideoActivity = new Intent(FaqActivity.this, MainVideoNavigationActivity.class);
             startActivity(openVideoActivity);
             return true;
         }

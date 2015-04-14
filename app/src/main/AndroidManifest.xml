@@ -39,6 +39,10 @@
             android:name=".FaqActivity"
             android:label="@string/title_activity_faq" >
         </activity>
+        <activity
+            android:name=".MainVideoNavigationActivity"
+            android:label="@string/title_activity_main_video_navigation" >
+        </activity>
     </application>
 
 </manifest>

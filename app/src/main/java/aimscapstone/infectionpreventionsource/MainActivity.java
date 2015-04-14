@@ -28,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick (View v)
             {
-                Intent openVideoActivity = new Intent(MainActivity.this, VideoNavigationActivity.class);
+                Intent openVideoActivity = new Intent(MainActivity.this, MainVideoNavigationActivity.class);
                 startActivity(openVideoActivity);
             }
         });
@@ -99,7 +99,7 @@ public class MainActivity extends ActionBarActivity {
 
         else if(id == R.id.video_nav)
         {
-            Intent openVideoActivity = new Intent(MainActivity.this, VideoNavigationActivity.class);
+            Intent openVideoActivity = new Intent(MainActivity.this, MainVideoNavigationActivity.class);
             startActivity(openVideoActivity);
             return true;
         }

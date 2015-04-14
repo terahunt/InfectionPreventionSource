@@ -16,5 +16,7 @@
 
     <string name="title_activity_faq">FAQ</string>
     <string name="home_navigation_text">Home</string>
+    <string name="title_activity_main_video_navigation">Videos</string>
+
 
 </resources>

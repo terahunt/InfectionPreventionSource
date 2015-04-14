@@ -1,8 +1,8 @@
 package aimscapstone.infectionpreventionsource;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
@@ -10,20 +10,23 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 
-public class TrainingNavigationActivity extends ActionBarActivity {
+public class MainVideoNavigationActivity extends ActionBarActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_training_navigation);
+        setContentView(R.layout.activity_main_video_navigation);
 
-        String[] trainingTopics = {"Introduction", "Section 1", "Section 2",
-                "Section 3","Conclusion"};
+        String[] videoTopics = {"Cleaning", "Decontamination",
+                "Environmental Protection Control", "Hygiene","Personal Protection Equipment",
+                "Steralization", "Waste Management"};
 
         ListAdapter adapter = new ArrayAdapter<String>(this, R.layout.custom_row_layout,
-                R.id.customRowTextView, trainingTopics);
-        ListView lv = (ListView) findViewById(R.id.trainingListView);
+                R.id.customRowTextView, videoTopics);
+        ListView lv = (ListView) findViewById(R.id.mainVideoListView);
         lv.setAdapter(adapter);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -41,29 +44,29 @@ public class TrainingNavigationActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.resource_nav) {
-            Intent openResourcesActivity = new Intent(TrainingNavigationActivity.this, ResourcesActivity.class);
+            Intent openResourcesActivity = new Intent(MainVideoNavigationActivity.this, ResourcesActivity.class);
             startActivity(openResourcesActivity);
-            return true;
-        }
-
-        else if(id == R.id.video_nav)
-        {
-            Intent openVideoActivity = new Intent(TrainingNavigationActivity.this, MainVideoNavigationActivity.class);
-            startActivity(openVideoActivity);
-            return true;
-        }
-
-        else if(id == R.id.home_nav)
-        {
-            Intent openMainActivity = new Intent(TrainingNavigationActivity.this, MainActivity.class);
-            startActivity(openMainActivity);
             return true;
         }
 
         else if(id == R.id.faq_nav)
         {
-            Intent openFaqActivity = new Intent(TrainingNavigationActivity.this, FaqActivity.class);
+            Intent openFaqActivity = new Intent(MainVideoNavigationActivity.this, FaqActivity.class);
             startActivity(openFaqActivity);
+            return true;
+        }
+
+        else if(id == R.id.training_nav)
+        {
+            Intent openTrainingActivity = new Intent(MainVideoNavigationActivity.this, TrainingNavigationActivity.class);
+            startActivity(openTrainingActivity);
+            return true;
+        }
+
+        else if(id == R.id.home_nav)
+        {
+            Intent openMainActivity = new Intent(MainVideoNavigationActivity.this, MainActivity.class);
+            startActivity(openMainActivity);
             return true;
         }
 
@@ -71,7 +74,5 @@ public class TrainingNavigationActivity extends ActionBarActivity {
         {
             return false;
         }
-
-
     }
 }

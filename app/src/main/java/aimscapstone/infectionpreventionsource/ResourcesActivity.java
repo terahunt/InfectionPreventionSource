@@ -42,7 +42,7 @@ public class ResourcesActivity extends ActionBarActivity {
 
         if(id == R.id.video_nav)
         {
-            Intent openVideoActivity = new Intent(ResourcesActivity.this, VideoNavigationActivity.class);
+            Intent openVideoActivity = new Intent(ResourcesActivity.this, MainVideoNavigationActivity.class);
             startActivity(openVideoActivity);
             return true;
         }
