@@ -42,7 +42,7 @@
                 android:src="@mipmap/ic_launcher"/>
 
             <ImageButton
-                android:id="@+id/faq_image_button"
+                android:id="@+id/chat_image_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"

@@ -13,7 +13,7 @@ public class MainActivity extends ActionBarActivity {
     private ImageButton mVideoButton;
     private ImageButton mTrainingButton;
     private ImageButton mResourcesButton;
-    private ImageButton mFaqButton;
+    private ImageButton mChatButton;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,16 +46,16 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        //Start FAQ activity
-        mFaqButton = (ImageButton)findViewById(R.id.faq_image_button);
+        //Start Chat activity
+        mChatButton = (ImageButton)findViewById(R.id.chat_image_button);
 
-        mFaqButton.setOnClickListener(new View.OnClickListener()
+        mChatButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick (View v)
             {
-                Intent openFaqActivity = new Intent(MainActivity.this, FaqActivity.class);
-                startActivity(openFaqActivity);
+                Intent openChatActivity = new Intent(MainActivity.this, ChatActivity.class);
+                startActivity(openChatActivity);
             }
         });
 
@@ -104,10 +104,10 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
 
-        else if(id == R.id.faq_nav)
+        else if(id == R.id.chat_nav)
         {
-            Intent openFaqActivity = new Intent(MainActivity.this, FaqActivity.class);
-            startActivity(openFaqActivity);
+            Intent openChatActivity = new Intent(MainActivity.this, ChatActivity.class);
+            startActivity(openChatActivity);
             return true;
         }
 

@@ -36,8 +36,8 @@
             android:label="@string/title_activity_resources" >
         </activity>
         <activity
-            android:name=".FaqActivity"
-            android:label="@string/title_activity_faq" >
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat" >
         </activity>
         <activity
             android:name=".MainVideoNavigationActivity"
@@ -46,3 +46,4 @@
     </application>
 
 </manifest>
+

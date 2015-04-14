@@ -7,12 +7,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class FaqActivity extends ActionBarActivity {
+public class ChatActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_faq);
+        setContentView(R.layout.activity_chat);
     }
 
 
@@ -32,37 +32,23 @@ public class FaqActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.resource_nav) {
-            Intent openResourcesActivity = new Intent(FaqActivity.this, ResourcesActivity.class);
+            Intent openResourcesActivity = new Intent(ChatActivity.this, ResourcesActivity.class);
             startActivity(openResourcesActivity);
             return true;
-        }
-
-        else if(id == R.id.video_nav)
-        {
-            Intent openVideoActivity = new Intent(FaqActivity.this, MainVideoNavigationActivity.class);
+        } else if (id == R.id.video_nav) {
+            Intent openVideoActivity = new Intent(ChatActivity.this, VideoNavigationActivity.class);
             startActivity(openVideoActivity);
             return true;
-        }
-
-        else if(id == R.id.home_nav)
-        {
-            Intent openMainActivity = new Intent(FaqActivity.this, MainActivity.class);
-            startActivity(openMainActivity);
-            return true;
-        }
-
-        else if(id == R.id.training_nav)
-        {
-            Intent openTrainingActivity = new Intent(FaqActivity.this, TrainingNavigationActivity.class);
+        } else if (id == R.id.training_nav) {
+            Intent openTrainingActivity = new Intent(ChatActivity.this, TrainingNavigationActivity.class);
             startActivity(openTrainingActivity);
             return true;
-        }
-
-        else
-        {
+        } else if (id == R.id.home_nav) {
+            Intent openMainActivity = new Intent(ChatActivity.this, MainActivity.class);
+            startActivity(openMainActivity);
+            return true;
+        } else {
             return false;
         }
-
-
     }
 }

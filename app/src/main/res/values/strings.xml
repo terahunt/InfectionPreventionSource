@@ -5,7 +5,6 @@
     <string name="training_navigation_text">Training</string>
     <string name="outbreak_navigation_text">Outbreak</string>
     <string name="resources_navigation_text">Resources</string>
-    <string name="faq_navigation_text">FAQ</string>
 
     <string name="title_activity_training_navigation">Training</string>
     <string name="title_activity_video_navigation">Videos</string>
@@ -13,10 +12,10 @@
 
     <string name="title_activity_training">Training</string>
     <string name="title_activity_resources">Resources</string>
+    <string name="title_activity_chat">Chat</string>
 
-    <string name="title_activity_faq">FAQ</string>
     <string name="home_navigation_text">Home</string>
+    <string name="chat_navigation_text">Chat</string>
     <string name="title_activity_main_video_navigation">Videos</string>
-
 
 </resources>

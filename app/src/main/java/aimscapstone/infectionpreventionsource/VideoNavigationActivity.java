@@ -74,10 +74,10 @@ public class VideoNavigationActivity extends ActionBarActivity {
             return true;
         }
 
-        else if(id == R.id.faq_nav)
+        else if(id == R.id.chat_nav)
         {
-            Intent openFaqActivity = new Intent(VideoNavigationActivity.this, FaqActivity.class);
-            startActivity(openFaqActivity);
+            Intent openChatActivity = new Intent(VideoNavigationActivity.this, ChatActivity.class);
+            startActivity(openChatActivity);
             return true;
         }
 

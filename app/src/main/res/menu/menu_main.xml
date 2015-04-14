@@ -14,8 +14,8 @@
           android:title="@string/video_navigation_text"
           android:orderInCategory="100"
           app:showAsAction="never"/>
-    <item android:id="@+id/faq_nav"
-          android:title="@string/faq_navigation_text"
+    <item android:id="@+id/chat_nav"
+          android:title="@string/chat_navigation_text"
           android:orderInCategory="100"
           app:showAsAction="never"/>
     <item android:id="@+id/training_nav"
