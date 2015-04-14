@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class VideoNavigationActivity extends ActionBarActivity {
 
@@ -20,6 +21,15 @@ public class VideoNavigationActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_navigation);
+
+        Bundle extras = getIntent().getExtras();
+        String videoCategory;
+        TextView videoNavTextView = (TextView)findViewById(R.id.video_nav_text_view);
+
+        if (extras != null) {
+            videoCategory = extras.getString("videoCategory");
+            videoNavTextView.setText(videoCategory);
+        }
 
         String[] videoTopics = {"Video 1", "Video 2", "Video 3"};
 
@@ -33,10 +43,10 @@ public class VideoNavigationActivity extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = (String) adapter.getItem(position);
-                //if(item.equals("Video 1")) {
+                if(item.equals("Video 1")) {
                     Intent startVideo = new Intent(VideoNavigationActivity.this, VideoActivity.class);
                     startActivity(startVideo);
-            //    }
+                }
 
 
             }

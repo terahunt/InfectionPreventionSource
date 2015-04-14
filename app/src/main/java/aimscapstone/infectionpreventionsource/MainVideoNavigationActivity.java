@@ -5,12 +5,17 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
 
 public class MainVideoNavigationActivity extends ActionBarActivity {
+
+    private ListAdapter adapter;
+    private ListView lv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +26,20 @@ public class MainVideoNavigationActivity extends ActionBarActivity {
                 "Environmental Protection Control", "Hygiene","Personal Protection Equipment",
                 "Steralization", "Waste Management"};
 
-        ListAdapter adapter = new ArrayAdapter<String>(this, R.layout.custom_row_layout,
+        adapter = new ArrayAdapter<String>(this, R.layout.custom_row_layout,
                 R.id.customRowTextView, videoTopics);
-        ListView lv = (ListView) findViewById(R.id.mainVideoListView);
+        lv = (ListView) findViewById(R.id.mainVideoListView);
         lv.setAdapter(adapter);
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = (String) adapter.getItem(position);
+                Intent openVideoNav = new Intent(MainVideoNavigationActivity.this, VideoNavigationActivity.class);
+                openVideoNav.putExtra("videoCategory", item);
+                startActivity(openVideoNav);
+            }
+        });
     }
 
 
