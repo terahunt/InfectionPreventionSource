@@ -120,7 +120,7 @@ public class MainActivity extends ActionBarActivity {
 
         else
         {
-            return false;
+            return super.onOptionsItemSelected(item);
         }
 
 

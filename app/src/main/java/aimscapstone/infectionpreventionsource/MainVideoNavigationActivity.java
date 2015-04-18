@@ -87,7 +87,7 @@ public class MainVideoNavigationActivity extends ActionBarActivity {
 
         else
         {
-            return false;
+            return super.onOptionsItemSelected(item);
         }
     }
 }

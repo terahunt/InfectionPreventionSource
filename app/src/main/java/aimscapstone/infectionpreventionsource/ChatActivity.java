@@ -48,7 +48,7 @@ public class ChatActivity extends ActionBarActivity {
             startActivity(openMainActivity);
             return true;
         } else {
-            return false;
+            return super.onOptionsItemSelected(item);
         }
     }
 }

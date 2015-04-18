@@ -69,7 +69,7 @@ public class ResourcesActivity extends ActionBarActivity {
 
         else
         {
-            return false;
+            return super.onOptionsItemSelected(item);
         }
 
 
