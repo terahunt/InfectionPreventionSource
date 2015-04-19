@@ -34,7 +34,8 @@ public class VideoActivity extends ActionBarActivity {
             String videoUrl = extras.getString("videoUrl");
             String title = extras.getString("videoTitle");
             Uri uri = Uri.parse(videoUrl);
-            videoTitle.setText(title);
+            if(getResources().getConfiguration().orientation==1)
+                videoTitle.setText(title);
 
             //Media Controller
             mc = new MediaController(this);
