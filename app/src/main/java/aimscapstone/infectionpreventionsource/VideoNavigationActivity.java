@@ -41,11 +41,21 @@ public class VideoNavigationActivity extends ActionBarActivity {
                             "Boot Covers", "Inner Gloves", "Coverall", "N95 Respirator",
                             "Surgical Hood", "Outer Apron", "Outer Gloves", "Face Shield",
                             "Verification"};
-                    videoDesc = new String[] {"Introduction", "Trained Observer",
-                            "Removing Own Clothing", "Examining Equipment", "Hand Cleaning",
-                            "Boot Covers", "Inner Gloves", "Coverall", "N95 Respirator",
-                            "Surgical Hood", "Outer Apron", "Outer Gloves", "Face Shield",
-                            "Verification"};
+                    videoDesc = new String[] {
+                            "Introduction by Dr. Pronovost on the Importance of Personal Protection Equipment.",
+                            "Step 1: Explanation the role of a trained observer.",
+                            "Step 2: Standards for appropriate clothing.",
+                            "Step 3: Inspection of equipment to be worn and used by health care worker.",
+                            "Step 4: Instruction on appropriate hand hygiene.",
+                            "Step 5: Instruction on how to put on boot covers.",
+                            "Step 6: Instruction on how to put on inner gloves.",
+                            "Step 7: Instruction on how to put on coverall.",
+                            "Step 8: Instruction on how to put on N95 respirator.",
+                            "Step 9: Instruction on how to put on surgical hood.",
+                            "Step 10: Instruction on how to put on outer apron.",
+                            "Step 11: Instruction on how to put on outer gloves.",
+                            "Step 12: Instruction on how to put on face shield.",
+                            "Step 13: Verify equipment with trained observer."};
                     videoImages = new int[]{R.mipmap.intro,R.mipmap.observer,
                             R.mipmap.oldclothing,R.mipmap.examining,R.mipmap.handcleaning,
                             R.mipmap.bootcovers,R.mipmap.innergloves,R.mipmap.coverall,

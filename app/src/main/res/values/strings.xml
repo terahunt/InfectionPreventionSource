@@ -17,5 +17,8 @@
     <string name="home_navigation_text">Home</string>
     <string name="chat_navigation_text">Chat</string>
     <string name="title_activity_main_video_navigation">Videos</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
