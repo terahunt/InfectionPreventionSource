@@ -12,10 +12,10 @@
 
     <string name="title_activity_training">Training</string>
     <string name="title_activity_resources">Resources</string>
-    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_chat">Forum</string>
 
     <string name="home_navigation_text">Home</string>
-    <string name="chat_navigation_text">Chat</string>
+    <string name="chat_navigation_text">Forum</string>
     <string name="title_activity_main_video_navigation">Videos</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
 

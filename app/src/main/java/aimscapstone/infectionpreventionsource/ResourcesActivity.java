@@ -15,10 +15,19 @@ public class ResourcesActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resources);
 
-        String[] resourceTitle = {"WHO", "CDC", "Other"};
-        String[] resourceDesc = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."};
+        String[] resourceTitle = {"WHO", "CDC", "Johns Hopkins Medicine"};
+        String[] resourceDesc = {"World Health Organization \n" + "\n" +
+                "Avenue Appia 20\n" +
+                "1211 Geneva 27 \n" +
+                "Switzerland" + "\n" +  "\n" +
+                "+ 41 22 791 21 11",
+                "Centers for Disease Control and Prevention \n" + "\n" +
+                    "1600 Clifton Road, \n" +
+                    "Atlanta, GA 30329 USA \n" + "\n" +
+                    "800-CDC-INFO",
+                "\n1800 Orleans St. Baltimore, \n" +
+                        "Maryland 21287 USA \n" + "\n" +
+                    "410-955-5000"};
 
         ResourcesAdapter adapter = new ResourcesAdapter(this, resourceTitle, resourceDesc);
         ListView lv = (ListView) findViewById(R.id.resourcesListView);
