@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Video 1"
+        android:id="@+id/video_title"
         android:textSize="@dimen/navigation_title_size"
         android:layout_marginTop="@dimen/navigation_title_margin"
         android:layout_marginBottom="@dimen/navigation_title_margin"

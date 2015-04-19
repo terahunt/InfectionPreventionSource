@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 
@@ -22,28 +23,33 @@ public class VideoActivity extends ActionBarActivity {
         setContentView(R.layout.activity_video);
 
         mVideoView = (VideoView)findViewById(R.id.videoView);
+        TextView videoTitle = (TextView)findViewById(R.id.video_title);
 
         //Keep screen on while video plays
         mVideoView.setKeepScreenOn(true);
 
-        Uri uri = Uri.parse("android.resource://" +this.getPackageName()
-        + "/" +R.raw.ed_sheeran);
+        Bundle extras = getIntent().getExtras();
 
-        //Media Controller
-        mc = new MediaController(this);
-        mc.setAnchorView(mVideoView);
-        mVideoView.setMediaController(mc);
-        mVideoView.requestFocus();
+        if(extras!=null) {
+            String videoUrl = extras.getString("videoUrl");
+            String title = extras.getString("videoTitle");
+            Uri uri = Uri.parse(videoUrl);
+            videoTitle.setText(title);
 
-        //Start
-        mVideoView.setVideoURI(uri);
-        if(savedInstanceState != null)
-        {
-            int mPosition = savedInstanceState.getInt(POSITION, 0);
-            mVideoView.seekTo(mPosition);
+            //Media Controller
+            mc = new MediaController(this);
+            mc.setAnchorView(mVideoView);
+            mVideoView.setMediaController(mc);
+            mVideoView.requestFocus();
+
+            //Start
+            mVideoView.setVideoURI(uri);
+            if (savedInstanceState != null) {
+                int mPosition = savedInstanceState.getInt(POSITION, 0);
+                mVideoView.seekTo(mPosition);
+            }
+            mVideoView.start();
         }
-        mVideoView.start();
-
     }
 
     @Override

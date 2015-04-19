@@ -22,8 +22,8 @@ public class MainVideoNavigationActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_video_navigation);
 
-        String[] videoTopics = {"Cleaning", "Decontamination",
-                "Environmental Protection Control", "Hygiene","Personal Protection Equipment",
+        String[] videoTopics = {"Personal Protection Equipment", "Decontamination",
+                "Environmental Protection Control", "Hygiene", "Cleaning",
                 "Steralization", "Waste Management"};
 
         adapter = new ArrayAdapter<String>(this, R.layout.custom_row_layout,
