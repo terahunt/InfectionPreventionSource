@@ -8,9 +8,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Study the steps of handwash."
+        android:text="Study the steps of handwash:"
         android:textSize="20sp"
         android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(This is timed.)"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"/>
 
     <LinearLayout
@@ -24,26 +31,26 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="0.25"
+            android:src="@mipmap/handwashstep1"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
             android:src="@mipmap/handwashstep2"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="0.25"
-            android:src="@mipmap/handwashstep4"/>
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="0.25"
-            android:src="@mipmap/handwashstep1"
+            android:src="@mipmap/handwashstep3"
             />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="0.25"
-            android:src="@mipmap/handwashstep3"/>
+            android:src="@mipmap/handwashstep4"/>
     </LinearLayout>
 
     <LinearLayout

@@ -28,6 +28,7 @@ public class TrainingActivity extends ActionBarActivity {
     private LinearLayout mBottomRight;
     private LinearLayout mMiddleLeft;
     private LinearLayout mMiddleRight;
+    private LinearLayout mLanding;
 
     private Button mCheckAnswerButton;
 
@@ -203,6 +204,35 @@ public class TrainingActivity extends ActionBarActivity {
         mBottomRight = (LinearLayout) findViewById(R.id.bottomRight);
 
         mBottomRight.setOnDragListener(new View.OnDragListener() {
+                                           @Override
+                                           public boolean onDrag(View v, DragEvent event) {
+                                               int action = event.getAction();
+                                               View view = (View) event.getLocalState();
+                                               switch (action) {
+                                                   case DragEvent.ACTION_DROP:
+                                                       // Dropped, reassign View to ViewGroup
+                                                       ViewGroup owner = (ViewGroup) view.getParent();
+                                                       owner.removeView(view);
+                                                       LinearLayout container = (LinearLayout) v;
+                                                       container.addView(view);
+                                                       view.setVisibility(View.VISIBLE);
+                                                       break;
+                                                   case DragEvent.ACTION_DRAG_ENDED:
+                                                       view.setVisibility(View.VISIBLE);
+                                                       break;
+                                                   default:
+                                                       break;
+                                               }
+                                               return true;
+                                           }
+
+                                       }
+
+        );
+
+        mLanding = (LinearLayout) findViewById(R.id.holdingArea);
+
+        mLanding.setOnDragListener(new View.OnDragListener() {
                                            @Override
                                            public boolean onDrag(View v, DragEvent event) {
                                                int action = event.getAction();
