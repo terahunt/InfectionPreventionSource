@@ -20,5 +20,6 @@
     <string name="title_activity_splash_screen">Infection Prevention Source</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_study_training">StudyTrainingActivity</string>
 
 </resources>

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="aimscapstone.infectionpreventionsource.TrainingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order the steps of handwash:"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:id="@+id/holdingArea"
+        android:weightSum="1"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/handWashStep2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:src="@mipmap/handwashstep2"
+            />
+
+        <ImageView
+            android:id="@+id/handWashStep4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:src="@mipmap/handwashstep4"/>
+
+        <ImageView
+            android:id="@+id/handWashStep1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:src="@mipmap/handwashstep1"
+            />
+
+        <ImageView
+            android:id="@+id/handWashStep3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:src="@mipmap/handwashstep3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/bottomLeft"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#D7D9D6"
+            android:layout_margin="10dp"
+            android:layout_weight="0.25"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/middleLeft"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#D7D9D6"
+            android:layout_margin="10dp"
+            android:layout_weight="0.25"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/middleRight"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#D7D9D6"
+            android:layout_margin="10dp"
+            android:layout_weight="0.25"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/bottomRight"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#D7D9D6"
+            android:layout_margin="10dp"
+            android:layout_weight="0.25"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Check Answer"
+        android:background="@color/primary_color"
+        android:padding="10dp"
+        android:id="@+id/checkAnswerButton"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/checkAnswerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"/>
+
+
+</LinearLayout>

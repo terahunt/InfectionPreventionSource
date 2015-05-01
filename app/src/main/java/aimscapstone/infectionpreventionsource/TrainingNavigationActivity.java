@@ -5,24 +5,41 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
 
 public class TrainingNavigationActivity extends ActionBarActivity {
+    private ListAdapter adapter;
+    private ListView lv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training_navigation);
 
-        String[] trainingTopics = {"Introduction", "Section 1", "Section 2",
-                "Section 3","Conclusion"};
+        String[] trainingTopics = {"Handwash", "Screening", "Infection Control",
+                "Personal Protective Equipment"};
 
-        ListAdapter adapter = new ArrayAdapter<String>(this, R.layout.custom_row_layout,
+        adapter = new ArrayAdapter<String>(this, R.layout.custom_row_layout,
                 R.id.customRowTextView, trainingTopics);
-        ListView lv = (ListView) findViewById(R.id.trainingListView);
+        lv = (ListView) findViewById(R.id.trainingListView);
         lv.setAdapter(adapter);
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = (String) adapter.getItem(position);
+
+                if(item=="Handwash") {
+                    Intent openTraining = new Intent(TrainingNavigationActivity.this, StudyTrainingActivity.class);
+                    startActivity(openTraining);
+                }
+            }
+        });
     }
 
     @Override
