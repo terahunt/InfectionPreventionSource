@@ -10,22 +10,20 @@
         android:layout_height="wrap_content"
         android:text="Study the steps of handwash:"
         android:textSize="20sp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_horizontal"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="(This is timed.)"
         android:textSize="20sp"
-        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:weightSum="1"
-        android:layout_margin="20dp">
+        android:weightSum="1">
 
         <ImageView
             android:layout_width="100dp"
@@ -57,32 +55,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="40dp">
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:layout_marginBottom="10dp"
-                android:text="1.) Wet hands with water"/>
+                android:text="1.) Wet hands with water."/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:layout_marginBottom="10dp"
-                android:text="2.) Apply enough soap to cover all hand surfaces"
+                android:text="2.) Apply enough soap to cover all hand surfaces."
                 android:layout_gravity="center_horizontal"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:layout_marginBottom="10dp"
-                android:text="3.) Rub hands palm to palm"/>
+                android:text="3.) Rub hands palm to palm."/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:layout_marginBottom="10dp"
-                android:text="4.) Right palm over left dorsum with interlaced fingers and vise versa"/>
+                android:text="4.) Right palm over left dorsum with interlaced fingers and vise versa."/>
 
     </LinearLayout>
 </LinearLayout>

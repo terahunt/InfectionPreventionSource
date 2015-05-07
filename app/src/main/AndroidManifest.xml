@@ -54,7 +54,7 @@
         </activity>
         <activity
             android:name=".StudyTrainingActivity"
-            android:label="@string/title_activity_study_training" >
+            android:label="@string/title_activity_training" >
         </activity>
     </application>
 

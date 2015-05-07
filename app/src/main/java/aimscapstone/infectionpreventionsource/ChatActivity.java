@@ -36,7 +36,7 @@ public class ChatActivity extends ActionBarActivity {
             startActivity(openResourcesActivity);
             return true;
         } else if (id == R.id.video_nav) {
-            Intent openVideoActivity = new Intent(ChatActivity.this, VideoNavigationActivity.class);
+            Intent openVideoActivity = new Intent(ChatActivity.this, MainVideoNavigationActivity.class);
             startActivity(openVideoActivity);
             return true;
         } else if (id == R.id.training_nav) {
